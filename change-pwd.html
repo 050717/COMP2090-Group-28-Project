@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Change Password</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="checkLogin()">
+
+<div class="navbar bank-blue">
+  <div class="logo">香港大学生银行</div>
+  <div class="nav-links">
+    <a href="index.html">Dashboard</a>
+    <a href="add-record.html">Transaction</a>
+    <a href="record-list.html">History</a>
+    <a href="change-pwd.html">Change Password</a>
+    <a href="#" onclick="logout()">Logout</a>
+  </div>
+</div>
+
+<div class="container" style="max-width: 500px;">
+  <div class="card bank-card">
+    <h3>Change Password</h3>
+
+    <div class="form-group">
+      <label>Current Password</label>
+      <input id="oldPwd" type="password" placeholder="Enter current password">
+    </div>
+
+    <div class="form-group">
+      <label>New Password</label>
+      <input id="newPwd" type="password" placeholder="Enter new password">
+    </div>
+
+    <div class="form-group">
+      <label>Confirm New Password</label>
+      <input id="confirmPwd" type="password" placeholder="Enter new password again">
+    </div>
+
+    <button onclick="changePassword()" class="bank-btn">Save New Password</button>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

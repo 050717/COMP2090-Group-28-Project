@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* 背景图片样式 */
+body.index-bg {
+  background: url('hongkong.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+}
+
+body.transaction-bg {
+  background: url('atm.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+}
+
+/* 非背景页默认样式 */
+body {
+  background: #f5f7fa;
+  color: #333;
+}
+
+/* Navbar - 改为红色主题 */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* 主色改为红色 #D92121（银行红） */
+.bank-blue {
+  background: #D92121;
+  color: white;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.nav-links a {
+  color: white;
+  margin-left: 1.2rem;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Container */
+.container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+}
+
+/* Card */
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 1rem;
+}
+
+/* 卡片标题改为红色 */
+.bank-card h3, .bank-card h4 {
+  margin-bottom: 1rem;
+  color: #D92121;
+}
+
+/* Form */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+/* 登录页花体样式 */
+.cursive-font label,
+.cursive-font input::placeholder {
+  font-family: 'Brush Script MT', 'Lucida Calligraphy', cursive;
+  font-size: 1.1rem;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+/* Button - 改为红色 */
+.bank-btn {
+  background: #D92121;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+
+.bank-btn.secondary {
+  background: #6c757d;
+}
+
+.bank-btn:hover {
+  opacity: 0.9;
+}
+
+/* Flex layout */
+.flex {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.flex > div {
+  flex: 1;
+  min-width: 200px;
+}
+
+/* Text colors - 调整为红色系 */
+.green-text {
+  color: #00b42a;
+}
+
+.red-text {
+  color: #D92121;
+}
+
+.blue-text {
+  color: #1a73e8;
+}
+
+/* Account balance - distinct blue color */
+.balance-text {
+  color: #1a73e8;
+}
+
+/* Record item */
+.record-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.record-item:last-child {
+  border-bottom: none;
+}
+
+.record-item .deposit {
+  color: #00b42a;
+  font-weight: bold;
+}
+
+.record-item .withdraw,
+.record-item .transfer {
+  color: #D92121;
+  font-weight: bold;
+}
+/* Delete button in record list */
+.delete-btn {
+  background: transparent;
+  border: 1px solid #D92121;
+  color: #D92121;
+  border-radius: 4px;
+  padding: 2px 8px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+.delete-btn:hover {
+  background: #D92121;
+  color: white;
+}
