@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bank Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="index-bg" onload="checkLogin(); calculateMoney();">
+
+<div class="navbar bank-blue">
+  <div class="logo">香港大学生银行</div>
+  <div class="nav-links">
+    <a href="index.html">Dashboard</a>
+    <a href="add-record.html">Transaction</a>
+    <a href="record-list.html">History</a>
+    <a href="change-pwd.html">Change Password</a>
+    <a href="#" onclick="logout()">Logout</a>
+  </div>
+</div>
+
+<div class="container">
+  <div class="card bank-card" style="margin-bottom: 1rem;">
+    <h4>Welcome, <span id="userName"></span></h4>
+  </div>
+
+  <div class="flex">
+    <div class="card bank-card">
+      <h4>Total Deposit</h4>
+      <h2 id="income" class="green-text">$0.00</h2>
+    </div>
+    <div class="card bank-card">
+      <h4>Total Withdraw</h4>
+      <h2 id="expense" class="red-text">$0.00</h2>
+    </div>
+    <div class="card bank-card">
+      <h4>Account Balance</h4>
+      <h2 id="balance" class="balance-text">$0.00</h2>
+    </div>
+  </div>
+
+  <div class="card bank-card" style="margin-top: 2rem;">
+    <h3>Quick Actions</h3>
+    <div class="flex" style="margin-top:1rem;">
+      <a href="add-record.html" class="bank-btn" style="text-align:center;text-decoration:none;flex:1;">
+        + New Transaction
+      </a>
+      <a href="record-list.html" class="bank-btn secondary" style="text-align:center;text-decoration:none;flex:1;">
+        View History
+      </a>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

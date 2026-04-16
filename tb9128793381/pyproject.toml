@@ -1,0 +1,11 @@
+[project]
+name = "04-09-student-deposit-web"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "flask",
+    "flask-sqlalchemy",
+    "flask-cors",
+]
